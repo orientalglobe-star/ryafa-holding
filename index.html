@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RYAFA — AI-powered marketing &amp; automation</title>
+<style>
+:root{
+  --navy:#071a33; --navy-2:#0d2a50; --blue:#1d5fbf; --blue-soft:#edf5ff;
+  --gold:#f0bd55; --gold-2:#d89c2d; --ink:#0b1b33; --muted:#607087;
+  --line:#dfe7f1; --white:#fff; --off:#f7f9fc;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;color:var(--ink);background:var(--white);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.6}
+.container{width:min(1080px,calc(100% - 40px));margin:auto}
+a{color:inherit;text-decoration:none}
+
+header{position:sticky;top:0;z-index:50;background:rgba(7,26,51,.96);backdrop-filter:blur(12px)}
+.navbar{height:76px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:800;letter-spacing:.1em;font-size:1.15rem}
+.brand-mark{width:32px;height:32px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-weight:800;font-size:.85rem}
+nav{display:flex;align-items:center;gap:26px}
+nav a{color:#d9e3f0;font-size:.86rem;font-weight:600;opacity:.85}
+nav a:hover{opacity:1}
+.nav-cta{background:var(--gold);color:var(--navy)!important;padding:10px 18px;border-radius:999px;opacity:1!important}
+
+.hero{position:relative;overflow:hidden;min-height:72vh;display:flex;align-items:center;color:#fff;
+  background:radial-gradient(circle at 80% 30%,rgba(43,102,179,.35),transparent 35%),
+             linear-gradient(120deg,#06162c 0%,#0b2343 55%,#123a68 100%)}
+.hero-inner{position:relative;z-index:2}
+.eyebrow{display:inline-block;font-size:.78rem;font-weight:700;color:var(--gold);background:rgba(240,189,85,.12);
+  padding:5px 12px;border-radius:6px;margin-bottom:18px}
+h1{font-size:2.6rem;line-height:1.15;margin:0 0 16px;max-width:16ch}
+.hero p{color:#c9d7ea;max-width:52ch;font-size:1.05rem;margin:0 0 28px}
+.hero-ctas{display:flex;gap:14px}
+.btn{padding:13px 24px;border-radius:8px;font-weight:700;font-size:.92rem;display:inline-block}
+.btn-primary{background:var(--gold);color:var(--navy)}
+.btn-ghost{border:1px solid rgba(255,255,255,.3);color:#fff}
+
+section{padding:70px 0}
+.section-head{max-width:56ch;margin:0 0 36px}
+.section-head .eyebrow{background:var(--blue-soft);color:var(--blue)}
+h2{font-size:1.8rem;margin:0 0 10px}
+.section-head p{color:var(--muted);margin:0}
+
+.sectors{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.sector-card{border:1px solid var(--line);border-radius:14px;padding:32px;background:var(--off)}
+.sector-card h3{font-size:1.3rem;margin:0 0 10px}
+.sector-card p{color:var(--muted);font-size:.95rem;margin:0 0 18px}
+.sector-card ul{margin:0 0 22px;padding-left:18px;color:var(--ink);font-size:.92rem}
+.sector-card li{margin-bottom:6px}
+.sector-card .placeholder{border:1px dashed var(--line);border-radius:8px;padding:14px;color:var(--muted);
+  font-size:.85rem;margin-bottom:18px;background:#fff}
+.sector-link{color:var(--blue);font-weight:700;font-size:.9rem}
+
+.about{background:var(--off);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.about .container{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.about p{color:var(--muted)}
+
+.contact{text-align:center}
+.contact .btn-primary{background:var(--navy);color:#fff}
+
+footer{padding:34px 0;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+@media(max-width:760px){.sectors,.about .container{grid-template-columns:1fr}h1{font-size:2rem}}
+</style>
+</head>
+<body>
+
+<header><div class="container navbar">
+  <div class="brand"><span class="brand-mark">R</span>RYAFA</div>
+  <nav>
+    <a href="#sectors">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact" class="nav-cta">Get in touch</a>
+  </nav>
+</div></header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <span class="eyebrow">Sydney · digital marketing &amp; AI automation</span>
+    <h1>Growth and automation for small businesses.</h1>
+    <p>Ryafa pairs content and marketing with practical AI automation, so your business gets seen and runs a little lighter.</p>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn btn-primary">Get in touch</a>
+      <a href="#sectors" class="btn btn-ghost">See what we do</a>
+    </div>
+  </div>
+</section>
+
+<section id="sectors">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What we do</span>
+      <h2>Two ways we help</h2>
+      <p>Each has its own page of services — added as they're finalised.</p>
+    </div>
+    <div class="sectors">
+      <div class="sector-card">
+        <h3>Marketing &amp; Content</h3>
+        <p>Content production and distribution, bundled as one offer for your business.</p>
+        <div class="placeholder">Services list — to be added</div>
+        <a href="#" class="sector-link">Explore Marketing &amp; Content →</a>
+      </div>
+      <div class="sector-card">
+        <h3>AI Automation &amp; Consulting</h3>
+        <p>Practical automation, starting with AI-drafted replies to your reviews and enquiries — always approved by a person before sending.</p>
+        <div class="placeholder">Full services list — to be added</div>
+        <a href="#" class="sector-link">Explore AI Automation &amp; Consulting →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container">
+    <div>
+      <span class="eyebrow" style="background:var(--blue-soft);color:var(--blue)">About</span>
+      <h2>Built to be practical, not flashy.</h2>
+    </div>
+    <p>Ryafa Pty Ltd is a Sydney-based digital marketing and AI automation business, helping small businesses grow and run more smoothly — one clear offer at a time.</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <h2>Let's talk about your business.</h2>
+    <p style="color:var(--muted);margin:0 0 24px">hello@ryafa.com.au</p>
+    <a href="mailto:hello@ryafa.com.au" class="btn btn-primary">Email us</a>
+  </div>
+</section>
+
+<footer>Ryafa Pty Ltd · ryafa.com.au</footer>
+
+</body>
+</html>
